@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=2.0" />
+    <title>Login Page</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+      #passwordpara {
+        display: inline;
+        padding-left: 3px;
+      }
+      .main {
+        /* border: 1px solid red; */
+        margin-top: 20px;
+        background-color: black;
+        height: 262px;
+        width: 200px;
+        /* border: 2px solid blue; */
+      }
+      #usernamebox {
+        width: 100%;
+        height: 20px;
+        border-radius: 4px;
+      }
+      .passwordsection {
+        margin: 10px 8px 0px 8px ;
+      }
+      .usernamesection {
+        margin: 10px 8px;
+      }
+      #passwordbox {
+        width: 100%;
+        height: 20px;
+        border-radius: 4px;
+      }
+      #btn-login {
+        width: 100%;
+        height: 25px;
+        border-radius: 4px;
+        margin: 10px 0px;
+        background-color:  rgb(44, 241, 44);
+        border: none;
+      }
+      .createaccountsection {
+        /* border: 1px solid blue; */
+      }
+      .fronting {
+        display: flex;
+        justify-content: space-between;
+      }
+      .logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+      .features {
+        /* background-color: rgb(34, 31, 42); */
+      }
+      #usernamepara {
+        padding-left: 3px;
+      }
+      .signpara {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+      }
+      .inneraccountsection {
+        display: flex;
+        justify-content: center;
+      }
+      #getpara {
+        display: inline;
+      }
+      .createaccountsection {
+        border: 1px solid gray;
+        padding: 10px;
+        background-color: rgb(34, 31, 42);
+      }
+      .uppersection{
+        border: 1px solid gray;
+        margin-bottom: 20px;
+      }
+      .anchor{
+        text-decoration: none;
+        color: rgb(95, 88, 232);
+      }
+      .textboxes:focus{
+        border: 2px solid blue;
+        outline: none; 
+        font-size: 10px;
+        /* box-shadow: 0 0 1px #007bff;  */
+      }
+      .textboxes{
+        background-color: black;
+        border: none;
+        color: white;
+        padding-left: 3px;
+      }
+      .image{
+        background-color: white;
+        border-radius:50%;
+        margin-bottom: 8px;
+      }
+      .uppersection{
+        background-color: rgb(34, 31, 42);
+      }
+      #btn-login:hover{
+        background-color: rgb(18, 180, 18);
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">
+       <div class="image">
+        <img src="github.png" alt="" height="30px" width="60px" />
+       </div>
+        <div class="welcome">
+          <p id="welcome">Sign in to GitHub</p>
+        </div>
+      </div>
+      <div class="features">
+        <div class="uppersection">
+        <div class="usernamesection">
+          <p id="usernamepara">Username or email address</p>
+          <input type="email" id="usernamebox" class="textboxes"/>
+        </div>
+        <div class="passwordsection">
+          <div class="fronting">
+            <p id="passwordpara">Password</p>
+            <a href="#" id="forgot" class="anchor">Forgot password?</a>
+          </div>
+          <input type="password" id="passwordbox" class="textboxes"/>
+          <button id="btn-login">Sign in</button>
+        </div>
+      </div>
+
+        
+        <div class="createaccountsection">
+          <div class="signpara">
+            <a href="#" class="anchor">sign in with passkey</a>
+          </div>
+          <div class="inneraccountsection">
+            <p id="getpara">New to GitHub?</p>
+            <a href="Cd" class="anchor">Create an account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
